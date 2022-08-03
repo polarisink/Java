@@ -13,9 +13,8 @@
     <java.version>17</java.version>
     <swagger.version>3.0.0</swagger.version>
     <guava.version>31.1-jre</guava.version>
-    <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
-    <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
     <lombok.version>1.18.24</lombok.version>
+    <hutool-all.version>5.8.4</hutool-all.version>
   </properties>
   <dependencies>
     <dependency>
@@ -30,8 +29,8 @@
     </dependency>
     <dependency>
       <groupId>cn.hutool</groupId>
-      <artifactId>hutool-core</artifactId>
-      <version>5.7.22</version>
+      <artifactId>hutool-all</artifactId>
+      <version>${hutool-all.version}</version>
     </dependency>
   </dependencies>
 
