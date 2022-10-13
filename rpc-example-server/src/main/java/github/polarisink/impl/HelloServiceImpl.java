@@ -15,7 +15,7 @@ public class HelloServiceImpl implements HelloService {
 
     static {
         System.out.println("test flow");
-        System.out.println("HelloServiceImpl被创建");
+        System.out.println("test flow2");
     }
 
     @Override
