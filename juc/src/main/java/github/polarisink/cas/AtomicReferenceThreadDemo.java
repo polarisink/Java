@@ -1,7 +1,5 @@
 package github.polarisink.cas;
 
-import sun.misc.Unsafe;
-
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 

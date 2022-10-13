@@ -9,27 +9,27 @@ import java.util.concurrent.FutureTask;
  * @date 2022/7/31
  */
 public class FutureDemo {
-	public static void main(String[] args) throws ExecutionException, InterruptedException {
-		FutureTask<String> futureTask = new FutureTask<>(new MyThread2());
-		Thread t = new Thread(futureTask, "tt");
-		t.start();
-		System.out.println(futureTask.get());
-	}
+  public static void main(String[] args) throws ExecutionException, InterruptedException {
+    FutureTask<String> futureTask = new FutureTask<>(new MyThread2());
+    Thread t = new Thread(futureTask, "tt");
+    t.start();
+    System.out.println(futureTask.get());
+  }
 
 }
 
 class MyThread implements Runnable {
 
-	@Override
-	public void run() {
+  @Override
+  public void run() {
 
-	}
+  }
 }
 
 class MyThread2 implements Callable<String> {
 
-	@Override
-	public String call() throws Exception {
-		return "hello here call call()";
-	}
+  @Override
+  public String call() throws Exception {
+    return "hello here call call()";
+  }
 }

@@ -21,16 +21,14 @@ public class ThreadOrderAccess {
 
 class ShareResource {
 
-  /**
-   * 设置一个标识,如果是number=1,线程A执行...
-   */
-  private int number = 1;
-
   Lock lock = new ReentrantLock();
   Condition condition1 = lock.newCondition();
   Condition condition2 = lock.newCondition();
   Condition condition3 = lock.newCondition();
-
+  /**
+   * 设置一个标识,如果是number=1,线程A执行...
+   */
+  private int number = 1;
 
   public void print5() {
     lock.lock();

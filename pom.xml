@@ -7,6 +7,9 @@
     <module>juc</module>
     <module>collection</module>
     <module>rpc</module>
+    <module>rpc-example-server</module>
+    <module>rpc-example-client</module>
+    <module>rpc-example-api</module>
   </modules>
 
   <groupId>github.polarisink</groupId>

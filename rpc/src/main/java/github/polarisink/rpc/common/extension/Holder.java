@@ -2,13 +2,13 @@ package github.polarisink.rpc.common.extension;
 
 public class Holder<T> {
 
-    private volatile T value;
+  private volatile T value;
 
-    public T get() {
-        return value;
-    }
+  public T get() {
+    return value;
+  }
 
-    public void set(T value) {
-        this.value = value;
-    }
+  public void set(T value) {
+    this.value = value;
+  }
 }

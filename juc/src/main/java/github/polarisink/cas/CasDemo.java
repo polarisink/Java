@@ -9,8 +9,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @date 2022/8/2
  */
 public class CasDemo {
-	public static void main(String[] args) {
-		val integer = new AtomicInteger();
-		integer.incrementAndGet();
-	}
+  public static void main(String[] args) {
+    val integer = new AtomicInteger();
+    integer.incrementAndGet();
+  }
 }

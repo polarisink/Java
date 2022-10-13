@@ -1,5 +1,21 @@
 package github.polarisink.sync;
 
+interface Food {
+  /**
+   * 做面
+   *
+   * @throws InterruptedException
+   */
+  void makeNoodles() throws InterruptedException;
+
+  /**
+   * 吃面
+   *
+   * @throws InterruptedException
+   */
+  void eatNoodles() throws InterruptedException;
+}
+
 /**
  * @author hzsk
  */
@@ -47,7 +63,6 @@ public class Test {
     }, "食客乙").start();
   }
 }
-
 
 /**
  * 普通面
@@ -130,21 +145,4 @@ class HandRolled implements Food {
     //吃完则唤醒厨师来做面
     this.notifyAll();
   }
-}
-
-
-interface Food {
-  /**
-   * 做面
-   *
-   * @throws InterruptedException
-   */
-  void makeNoodles() throws InterruptedException;
-
-  /**
-   * 吃面
-   *
-   * @throws InterruptedException
-   */
-  void eatNoodles() throws InterruptedException;
 }

@@ -15,14 +15,14 @@ import java.lang.annotation.*;
 @Inherited
 public @interface RpcReference {
 
-    /**
-     * Service version, default value is empty string
-     */
-    String version() default "";
+  /**
+   * Service version, default value is empty string
+   */
+  String version() default "";
 
-    /**
-     * Service group, default value is empty string
-     */
-    String group() default "";
+  /**
+   * Service group, default value is empty string
+   */
+  String group() default "";
 
 }

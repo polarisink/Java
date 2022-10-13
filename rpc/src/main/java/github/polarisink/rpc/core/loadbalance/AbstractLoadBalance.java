@@ -23,6 +23,11 @@ public abstract class AbstractLoadBalance implements LoadBalance {
     return doSelect(serviceAddresses, rpcRequest);
   }
 
+  /**
+   * @param serviceAddresses
+   * @param rpcRequest
+   * @return
+   */
   protected abstract String doSelect(List<String> serviceAddresses, RpcRequest rpcRequest);
 
 }

@@ -18,5 +18,5 @@ public class HashMapTest {
     IntStream.rangeClosed(0, 100).forEach(i -> map.put(rand.nextInt(100), rand.nextInt(100)));
     map.forEach((k, v) -> System.out.println(StrUtil.format("key:{}, value:{}", k, v)));
   }
-  
+
 }

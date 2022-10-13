@@ -56,6 +56,7 @@ public final class ExtensionLoader<T> {
       //TODO 为什么不先创建再添加
       extensionLoader = new ExtensionLoader<>(type);
       EXTENSION_LOADERS.put(type, extensionLoader);
+      return (ExtensionLoader<S>) EXTENSION_LOADERS.computeIfAbsent(type, key -> new ExtensionLoader<>(type));
       /*EXTENSION_LOADERS.putIfAbsent(type, new ExtensionLoader<S>(type));
       extensionLoader = (ExtensionLoader<S>) EXTENSION_LOADERS.get(type);*/
     }
