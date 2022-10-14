@@ -17,6 +17,7 @@ public class HelloServiceImpl implements HelloService {
         System.out.println("test flow");
         System.out.println("test flow2");
         System.out.println("test flow3");
+        System.out.println("test flow4");
     }
 
     @Override
