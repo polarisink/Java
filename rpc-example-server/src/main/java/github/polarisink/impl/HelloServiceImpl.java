@@ -15,6 +15,7 @@ public class HelloServiceImpl implements HelloService {
 
     static {
         System.out.println("msgTemplate");
+        System.out.println("msgTemplate");
         System.out.println("HelloServiceImpl被创建");
     }
 
